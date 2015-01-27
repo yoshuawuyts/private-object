@@ -4,8 +4,8 @@
   "description": "private-object",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test node test | colortape",
-    "test-cov": "NODE_ENV=test istanbul cover test.js",
+    "test": "NODE_ENV=test node --harmony test | colortape",
+    "test-cov": "NODE_ENV=test node --harmony ./node_modules/.bin/istanbul cover test.js",
     "lint": "eslint ."
   },
   "repository": "yoshuawuyts/private-object",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "colortape": "^0.1.1",
     "eslint": "^0.13.0",
-    "istanbul": "^0.3.5",
+    "istanbul-harmony": "~0.3.0",
     "tape": "^3.4.0"
   },
   "files": [
