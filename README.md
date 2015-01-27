@@ -4,7 +4,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-Create an immutable enumerable object with ES6 Symbols, getters, setters and
+Create an immutable enumerable object. Uses ES6 Symbols, getters / setters and
 `Object.lock`.
 
 ## Installation
