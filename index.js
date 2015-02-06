@@ -1,5 +1,5 @@
-module.exports = nwFn 
- 
+module.exports = nwFn
+
 function nwFn(obj) {
   var res = {}
   Object.keys(obj).forEach(function(key) {
@@ -10,16 +10,16 @@ function nwFn(obj) {
     })
     res[key] = obj[key]
   })
-  return Object.freeze(res)
+  return Object.seal(res)
 }
- 
+
 function setterFn(key) {
   var self = this
   return function(val) {
-    self[key] = val 
+    self[key] = val
   }
 }
- 
+
 function getterFn(key) {
   var self = this
   return function(val) {

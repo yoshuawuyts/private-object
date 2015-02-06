@@ -5,7 +5,7 @@
 [![Downloads][downloads-image]][downloads-url]
 
 Create an immutable enumerable object. Uses ES6 Symbols, getters / setters and
-`Object.freeze`.
+`Object.seal`.
 
 ## Installation
 ```bash
